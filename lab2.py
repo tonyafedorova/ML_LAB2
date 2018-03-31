@@ -162,3 +162,13 @@ plt.bar(x2, count)
 plt.xticks(x2, names2, rotation = 30)
 plt.show()
 
+#Другой вариант построения гистограммы по з/п
+
+import numpy as np
+data = []
+for i in vac_sal:
+    data.append(vac_sal[i])
+bins = [30000, 80000, 120000, 150000, 200000, 250000, 300000, 350000, 400000]
+plt.hist(data, bins)
+plt.show()
+
